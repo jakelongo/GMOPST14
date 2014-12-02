@@ -9,7 +9,7 @@ and the cross-correlation distinguisher. They are not in any way resilient to
 undefined inputs -- they will crash!
 
 The code should compile in windows, osx and linux (although it has only been 
-tested on a windows machine).
+tested on a windows machine). Compiling on linux and osx should
 
 -------------------------------------------------------------------------------
 s_c --- split and concat program
