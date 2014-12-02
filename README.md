@@ -8,8 +8,12 @@ As a general note, these programs are just example code for the S<sub>c</sub>
 simulator and the cross-correlation distinguisher. They are not in any way
 resilient to undefined inputs -- they will crash!
 
-The code should compile in windows, osx and linux (although it has only been 
-tested on a windows machine). Compiling on linux and osx should
+The source should compile in windows, osx and linux (although it has only
+been tested on a windows machine). Compiling on linux and osx is as simple as
+calling g++ on s_c.cpp and xcorr.cpp. Compiling on a windows box has also
+been tested with VS2013. Note that xcorr.exe will take very long to execute
+for large traces (hence the compression for the ARM traces). Compiler
+optimisations for SSE/AVX have been noted to greatly improve performance.
 
 -------------------------------------------------------------------------------
 s_c --- split and concat simulator
