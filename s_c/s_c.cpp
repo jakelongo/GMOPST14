@@ -4,8 +4,11 @@
 #ifdef _WIN32
 #include "stdafx.h"
 #include <direct.h>
-#define mkdir _mkdir
+#define mkdir(_path, _mode) _mkdir(_path)
 #elif __linux
+#include <sys/stat.h>
+#include <sys/types.h>
+#elif __APPLE__
 #include <sys/stat.h>
 #include <sys/types.h>
 #endif
@@ -67,8 +70,8 @@ uint8_t concatTraces(uint32_t dataWidth, std::string traceListFilePath_A, std::s
 	}
 
 	// Make root directory for trace files
-	mkdir("DATA");
-	mkdir(traceDataPathRoot_C.c_str());
+	mkdir("DATA", 0777);
+	mkdir(traceDataPathRoot_C.c_str(), 0777);
 
 	tempData_A = malloc(concatPoint * dataWidth);
 
@@ -92,7 +95,7 @@ uint8_t concatTraces(uint32_t dataWidth, std::string traceListFilePath_A, std::s
 		// Make directory if necessary
 		if ((fileCounter % 10000) == 0) {
 			sprintf(pathString, "%s/d%03d", traceDataPathRoot_C.c_str(), (fileCounter / 10000));
-			mkdir(pathString);
+			mkdir(pathString, 0777);
 		}
 
 		// Set path for output file
