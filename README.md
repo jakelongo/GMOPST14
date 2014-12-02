@@ -44,10 +44,10 @@ Usage:
 
 The output will be 4 traces (all of data-width double):
 
-_crossCorrelation.dwfm
-_intermediateStdDev.dwfm
-_intermediateSum.dwfm
-_intermediateSum2.dwfm
+[outputDirectory]/_crossCorrelation.dwfm  
+[outputDirectory]/_intermediateStdDev.dwfm  
+[outputDirectory]/_intermediateSum.dwfm  
+[outputDirectory]/_intermediateSum2.dwfm  
 
 they are pretty self explanitory.
 
