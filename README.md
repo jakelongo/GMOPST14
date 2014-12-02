@@ -19,10 +19,10 @@ Usage:
 
 ./s_c [data-width] [traceFileListPath_A.txt] [traceFileListPath_B.txt] [outputPrefix] [concatPoint]
 
-[data-width]                -- defines how the trace data is stored (1,2 and 8 for uint8, uint16 and double respectively)
-[traceFileListPath_A.txt]   -- path to a trace file list for the start of the trace (l^{p})
-[traceFileListPath_B.txt]   -- path to a trace file list for the end of the trace (l^{c})
-[outputPrefix]              -- the prefix name for directory and output of concatenated traces
+[data-width]                -- defines how the trace data is stored (1,2 and 8 for uint8, uint16 and double respectively)  
+[traceFileListPath_A.txt]   -- path to a trace file list for the start of the trace (l^{p})  
+[traceFileListPath_B.txt]   -- path to a trace file list for the end of the trace (l^{c})  
+[outputPrefix]              -- the prefix name for directory and output of concatenated traces  
 [concatPoint]               -- the concatenation point of the two sets of traces
 
 The output will be a set of traces of the form l^{p} || l^{c} concatenated at
@@ -36,10 +36,10 @@ Usage:
 
 ./xcorr [data-width] [traceFileListPath.txt] [outputDirectory] [traceStartPoint] [traceStopPoint] [windowSize]
 
-[data-width]        -- defines how the trace data is stored (1,2 and 8 for uint8, uint16 and double respectively)
-[outputDirectory]   -- path where output files will be placed
-[traceStartPoint]   -- the start point for cross-correlation analysis
-[traceStopPoint]    -- the stop point for cross-correlation analysis
+[data-width]        -- defines how the trace data is stored (1,2 and 8 for uint8, uint16 and double respectively)  
+[outputDirectory]   -- path where output files will be placed  
+[traceStartPoint]   -- the start point for cross-correlation analysis  
+[traceStopPoint]    -- the stop point for cross-correlation analysis  
 [windowSize]        -- window size w (generally about a clock cycle for microcontrollers)
 
 The output will be 4 traces (all of data-width double):
