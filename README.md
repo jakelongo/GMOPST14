@@ -12,7 +12,7 @@ The code should compile in windows, osx and linux (although it has only been
 tested on a windows machine). Compiling on linux and osx should
 
 -------------------------------------------------------------------------------
-s_c --- split and concat program
+s_c --- split and concat simulator
 -------------------------------------------------------------------------------
 
 Usage:
