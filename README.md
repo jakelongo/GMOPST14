@@ -4,9 +4,9 @@ GMOPST14
 Example programs for research related to GMOPST14 presented at AsiaCrypt 2014 
 (https://eprint.iacr.org/2014/357)
 
-As a general note, these programs are just example code for the S_{c} simulator
-and the cross-correlation distinguisher. They are not in any way resilient to 
-undefined inputs -- they will crash!
+As a general note, these programs are just example code for the S<sub>c</sub>
+simulator and the cross-correlation distinguisher. They are not in any way
+resilient to undefined inputs -- they will crash!
 
 The code should compile in windows, osx and linux (although it has only been 
 tested on a windows machine). Compiling on linux and osx should
@@ -20,12 +20,12 @@ Usage:
 ./s_c [data-width] [traceFileListPath_A.txt] [traceFileListPath_B.txt] [outputPrefix] [concatPoint]
 
 [data-width]                -- defines how the trace data is stored (1,2 and 8 for uint8, uint16 and double respectively)  
-[traceFileListPath_A.txt]   -- path to a trace file list for the start of the trace (l^{p})  
-[traceFileListPath_B.txt]   -- path to a trace file list for the end of the trace (l^{c})  
+[traceFileListPath_A.txt]   -- path to a trace file list for the start of the trace (l<sup>p</sup>)  
+[traceFileListPath_B.txt]   -- path to a trace file list for the end of the trace (l<sup>c</sup>)  
 [outputPrefix]              -- the prefix name for directory and output of concatenated traces  
 [concatPoint]               -- the concatenation point of the two sets of traces
 
-The output will be a set of traces of the form l^{p} || l^{c} concatenated at
+The output will be a set of traces of the form l<sup>p</sup> || l<sup>c</sup> concatenated at
 [concatPoint].
 
 -------------------------------------------------------------------------------
