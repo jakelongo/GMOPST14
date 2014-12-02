@@ -1,8 +1,8 @@
 REM doDevice %deviceName %dataWidth %splitpoint %xcorrWindow %xcorrStart %xcorrStop
 REM doDevice %1          %2         %3          %4           %5          %6
 
-REM call :doDevice SASEBO_GII 2 930 20 0 1900
-REM call :doDevice SASEBO_R 2 440 10 0 1000
+call :doDevice SASEBO_GII 2 930 20 0 1900
+call :doDevice SASEBO_R 2 440 10 0 1000
 call :doDevice ARM 8 4610 100 400 8300
 
 goto :EOF
