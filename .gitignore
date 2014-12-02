@@ -31,3 +31,7 @@ x64/
 *.exe
 *.out
 *.app
+
+# Apple temp files
+*.DS_Store
+*._.DS_Store
