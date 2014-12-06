@@ -74,6 +74,19 @@ SASEBO-R: traces are of data-width uint16. AES0 selected
 Example batch file (exampleRun.bat) demonstrates running the simulator and 
 distinguisher on a windows machine with cygwin for all the trace sets provided.
 
+-------------------------------------------------------------------------------
+Errata notes on data sets.
+-------------------------------------------------------------------------------
 
+- The data storage system at UoB does not facilitate downloading entire
+directories. To account for this, we provide the script downloadDataset.sh to
+download the data sets required for each device to run the distinguisher
+experiments.
+
+- The SASEBO_R traces were part of a larger collect and the excess traces
+were not removed prior to upload. Please ignore traces from index 300 upwards.
+
+- The README.txt for the data sets suggests the SASEBO_R and SASEBO_GII are 
+compressed. This is not the case, compression was only used on the ARM set.
 
 
