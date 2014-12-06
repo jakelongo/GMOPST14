@@ -81,7 +81,7 @@ Errata notes on data sets.
 - The data storage system at UoB does not facilitate downloading entire
 directories. To account for this, we provide the script downloadDataset.sh to
 download the data sets required for each device to run the distinguisher
-experiments.
+experiments. Note, the script requires wget to be installed on the system.
 
 - The SASEBO_R traces were part of a larger collect and the excess traces
 were not removed prior to upload. Please ignore traces from index 300 upwards.
